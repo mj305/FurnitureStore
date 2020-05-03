@@ -16,9 +16,39 @@
 
 
 <body>
+
+    <!-- modal box -->
+    <input type="checkbox" id="show-hide-forms" hidden>
+    <div class="forms-wrapper">
+        <label for="show-hide-forms" class="x-btn"> &#10005; </label>
+        <input type="checkbox" id="show-form" hidden>
+        <div class="show-btns-wrapper">
+            <label for="show-form" class="show-form-btn show-signup-form"> Sign Up </label>
+            <label for="show-form" class="show-form-btn show-login-form"> Log In </label>
+        </div>
+
+        <form class="signup-form" action="">
+            <h3 class="form-heading"> Sign Up </h3>
+            <div class="fullname-inputs-wrapper">
+                <input type="text" placeholder="First Name">
+                <input type="text" placeholder="Last Name">
+            </div>
+            <input type="text" class="form-input" placeholder="Username">
+            <input type="email" class="form-input" placeholder="Email Address">
+            <input type="password" class="form-input" placeholder="Password">
+            <input type="submit" value="SIGN UP" class="form-btn">
+        </form>
+
+        <form class="login-form" action="">
+            <h3 class="form-heading"> Log In </h3>
+            <input type="email" class="form-input" placeholder="Email Address">
+            <input type="password" class="form-input" placeholder="Password">
+            <input type="submit" value="LOG IN" class="form-btn">
+        </form>
+    </div>
+    <!-- end of modal box -->
     
     <div class="container">
-
         <!--  navbar   -->
         <ul class="social-icons">
             <li class="social-icon-item">
@@ -49,8 +79,10 @@
             <ul class="first-nav-list">
                 <li class="first-nav-item">
                     <a href="#" class="first-nav-link">
-                        <i class="fas fa-sign-in-alt"></i>
-                        Sign Up / Log In
+                        <label for="show-hide-forms">
+                            <i class="fas fa-sign-in-alt"></i>
+                            Sign Up / Log In
+                        </label>
                     </a>
                 </li>
 
@@ -186,7 +218,6 @@
 
 
     <!-- banner -->
-
     <section class="banner">
         <div class="banner-content">
             <h1 class="banner-heading"> Great Sale </h1>
@@ -220,13 +251,10 @@
             </div>
         </div>
     </section>
-
-
     <!-- end of banner -->
 
 
     <!-- day offer -->
-
     <section class="day-offer">
           <img src="images/day-offer-img-one.jpg" class="day-offer-img-one" alt="offer picture">
           <h1 class="day-offer-heading"> Day Offer </h1>  
@@ -234,12 +262,10 @@
           <button class="day-offer-btn"> Shop Now </button>
           <img src="images/day-offer-img-two.jpg" class="day-offer-img-two" alt="second offer picture">
     </section>  
-
     <!-- end of day offer -->
 
 
     <!-- bestselling furniture -->
-
     <section class="bestselling-furniture">
 
         <h1 class="bestselling-furniture-header"> Bestselling Furniture </h1>
@@ -291,8 +317,7 @@
     <!-- end of bestselling furniture -->
 
 
-    <!-- gallery -->
-
+   <!-- gallery -->
     <section class="gallery">
         <img src="images/gallery-img-1.jpeg" alt="furniture picture" class="gallery-img gallery-img-1">
         <img src="images/gallery-img-2.jpeg" alt="furniture picture" class="gallery-img gallery-img-2">
@@ -307,14 +332,25 @@
         <img src="images/gallery-img-11.jpeg" alt="furniture picture" class="gallery-img gallery-img-11">
         <img src="images/gallery-img-12.jpeg" alt="furniture picture" class="gallery-img gallery-img-12">
     </section>
-
-
     <!-- end of gallery -->
 
 
+    <!-- contact -->
+    <section class="contact">
+        <h1 class="contact-heading">Join us and be in the know</h1>
+        <form class="contact-form">
+            <input type="text" class="contact-input" placeholder="Enter email...">
+            <input type="submit" class="contact-btn" value="Sign Up">
+        </form>
+    </section>
+    <!-- end of contact -->
+
+
+    <!-- footer  -->
+    <footer class="footer">
+        <p> &copy;Maria Beckles, 2020 </p>
+    </footer>
+    <!-- end of footer  -->
     </div>
-
-
-
-</body>
+ </body>
 </html>
