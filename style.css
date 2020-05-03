@@ -20,7 +20,7 @@ body {
 .container {
     display: grid;
     grid-template-columns: minmax(6rem, 1fr) repeat(8, minmax(min-content, 16rem)) minmax(6rem, 1fr);
-    grid-template-rows: repeat(3, min-content) 70vh;
+    grid-template-rows: repeat(3, min-content) 70vh min-content;
     grid-row-gap: 1.6rem;
     margin-top: 1.6rem;
 }
@@ -342,7 +342,7 @@ body {
     width: 1.2rem;
     height: 1.3rem;
     background-color: #bbb;
-    border: .2rem solid #d38800;
+    border: .2rem solid white;
     border-radius: 50%;
     cursor: pointer;
     outline: none;
@@ -379,21 +379,81 @@ body {
 
 .slide-btn-2:focus ~ .slideshow-wrapper {
     animation: none;
-    left: -100;
+    left: -100%;
 }
 
 .slide-btn-3:focus ~ .slideshow-wrapper {
     animation: none;
-    left: -200;
+    left: -200%;
 }
 
 .slide-btn-4:focus ~ .slideshow-wrapper {
     animation: none;
-    left: -300;
+    left: -300%;
+}
+/* end of banner */
+
+
+/* day offer */
+
+.day-offer {
+    grid-column: 2 / 10;
+    grid-row: 5 / 6;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, min-content);
+    grid-gap: 1.6rem 3.2rem;
+    justify-items: center;
 }
 
+.day-offer-img-one {
+    grid-column: 1 / 3;
+    grid-row: 1 / -1;
+    width: 100%;
+}
 
-/* end of banner */
+.day-offer-img-two {
+    grid-column: 3 / -1;
+    grid-row: 4 / -1;
+    width: 100%;
+    align-self: flex-end;
+}
+
+.day-offer-heading {
+    grid-column: 3 / -1;
+    grid-row: 1 / 2;
+    font-size: 6rem;
+    color: #23487f;
+}
+
+.day-offer-paragraph {
+    grid-column: 3 / -1;
+    grid-row: 2 / 3;
+    font-size: 3rem;
+    color: #34598f;
+}
+
+.day-offer-btn {
+    grid-column: 3 / -1;
+    grid-row: 3 / 4;
+    width: 16rem;
+    padding: 1rem;
+    font-size: 1.4rem;
+    color: #fff;
+    background: linear-gradient(to top, #00154c, #12376e, #23487f);
+    border: none;
+    border-radius: 5rem;
+    text-transform: uppercase;
+    outline: none;
+    box-shadow: .2rem .2rem 1rem #777;
+}
+
+.day-offer-btn:hover {
+    box-shadow: .2rem.2rem 2rem #777;
+    cursor: pointer;
+}
+
+/* end of day offer */
 
 
 
