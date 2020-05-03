@@ -38,6 +38,7 @@ body {
     font-size: 1.8rem;
     color: #12376e;
     transition: all .2s;
+    outline: none;
 }
 
 .social-icon:hover {
